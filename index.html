@@ -1,29 +1,55 @@
 <!doctype html>
 <html>
-<head>
-<title>책소개</title>
-<meta charset="utf-8">
-</head>
-<body>
-<style>
-    a {
-        color:rgb(0, 0, 0);
-        text-decoration: none;
-    }
-    h1{
-        font-size:45px;
-        text-align:center;
-    }
-</style>
-<script>
-    function goPage(url){
-        document.location.href = url;
-    }
-</script>
-<h1>book</h1>
-<ol>
-<li onclick="goPage('../sub/beverage.html')" style="cursor:pointer;">채식주의자</li>
-<li><a href="./sub/cafedodo.html" title="시메노나기">밤에만 열리는 카페 도도</a></li>
-<li><a href="sub/welcome.html" title="황보름">어서오세요, 휴남동 서점입니다</a></li>
-</ol>
 
+<head>
+    <title>책소개</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function goPage(url) {
+            document.location.href = url;
+        }
+        let num = 1;
+        while (num <= 100) {
+            document.write(num);
+            num++;
+        }
+
+
+    </script>
+    <h1>book</h1>
+    <ol>
+        <li onclick="goPage('./sub/beverage.html')" style="cursor:pointer;">채식주의자</li>
+        <li><a href="./sub/cafedodo.html" title="시메노나기">밤에만 열리는 카페 도도</a></li>
+        <li><a href="sub/welcome.html" title="황보름">어서오세요, 휴남동 서점입니다</a></li>
+    </ol>
+    <script>
+        let count = 0;
+        for (let i = 1; i <= 999; i++) {
+            if (i % 2 === 0) count++;
+        }
+        document.write('짝수의 개수는 ${count}개입니다.');//왜 안 나오는지 모르겠어요ㅜㅜ
+
+        for (let dan = 1; dan <= 9; dan++) {
+            for (let num = 1; num <= 9; num++) {
+                document.write('${dan} * ${num}=${dan*num}');//숫자가 다 안 나와요..
+            }
+        }
+
+        
+
+    </script>
+</body>
